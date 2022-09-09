@@ -17,14 +17,221 @@
             </div>
             
             <!--Menu Items-->   
-            <div class="flex space-x-6">
-                <a href="#">Destinations</a>
-                <a href="#">Experiences</a>
-                <a href="#">Tips and Ideas</a>
-                <a href="#">Shop</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-500">Destinations</a>
+                <a href="#" class="hover:text-blue-500">Experiences</a>
+                <a href="#" class="hover:text-blue-500">Tips and Ideas</a>
+                <a href="#" class="hover:text-blue-500">Shop</a>
             </div>    
+            <a href="#" class="hidden md:block px-6 py-2 border-blue-500 border-solid border-2 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white">Subscribe</a>
+
+            <!--Hamburger Icon-->
+            <button id="menu-btn" class="block hamburger md:hidden">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-mid"></span>
+                <span class="hamburger-bottom"></span>
+            </button>  
         </div>
-        
+        <!--Mobile/Small Screen Menu-->
+        <div class="md:hidden">
+            <div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-8 space-y-6 font-bold text-blue-500 bg-white right-6 left-6 drop-shadow-md sm:w-full sm:self-center ">
+            <a href="#">Destinations</a>    
+            <a href="#">Experiences</a>    
+            <a href="#">Tips and Ideas</a>    
+            <a href="#">Shop</a>    
+            <a href="#">Subscribe</a>    
+            </div>
+            
+        </div>
     </nav>
+
+    <section id="hero">
+        <div class="bg-origin-border bg-cover bg-center w-screen h-auto" style="background-image:url('images/norway.jpg');">
+            <div class="w-full h-auto flex-col space-y-10 pl-8 pr-6 py-10">
+                <h1 class="text-white text-6xl font-bold">Find your next travel adventure</h1>
+                <p class="text-white text-lg leading-6 w-2/3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, hic cupiditate et provident corrupti magnam iusto unde. Iste, eius dolore.</p>
+                <div><a href="#" class="px-6 py-2 text-lg border-white border-solid border-2 rounded-full bg-white hover:bg-white hover:text-black md:text-white md:bg-transparent">Get started</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <div class="py-14 px-8">
+            <div class="flex flex-wrap justify-between items-center">
+                <div>
+                    <h3 class="text-2xl">
+                        Discover amazing destinations
+                    </h3>
+                    <h2 class="font-bold text-4xl py-4 md:py-0">
+                        Where would you like to go?
+                    </h2>
+                </div>
+                <div class="mx-auto pt-2 md:pt-0 md:mx-0">
+                    <a href="#" class="text-xl text-white px-4 py-2 bg-sky-300 rounded-lg hover:bg-sky-300 hover:text-white md:bg-gray-200 md:text-black">View All Destinations</a>
+                </div>
+            </div>
+        </div>
+        <!--images for medium screens and larger-->
+        <div class="hidden md:flex">
+            <img src="https://source.unsplash.com/Dv0ZVpB2Gcc/640x959" alt="the Eiffel Tower lit in blue light at night" class="w-1/3 h-auto">
+            <img src="https://source.unsplash.com/HqtfAWy_75E/640x959" alt="a camel rests by the base of the Great Pyramid" class="w-1/3 h-auto">
+            <img src="https://source.unsplash.com/JNAGQf0Nmr4/640x959" alt="on a palm-lined beach, an outstretched hand holds a coconut with a straw stuck in it" class="w-1/3 h-auto">
+        </div>
+        <!--travel destinations links-->
+        <div class="p-6">
+            <h3 class="text-xl text-center">
+                Top Destinations
+            </h3>
+            <div class="flex justify-evenly items-center flex-wrap py-4">
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Paris</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Italy</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Maldives</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">New York City</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Spain</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">London</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Jamaica</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Cancun</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Japan</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Fiji</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Australia</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">All destinations</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="features">
+        <div class="bg-blue-700">
+            <div class="py-14 px-8">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <h3 class="text-2xl text-white">
+                            Tips, tricks and ideas for your next journey
+                        </h3>
+                        <h2 class="font-bold text-4xl text-white py-4 md:py-0">
+                            Feature Articles
+                        </h2>
+                    </div>
+                    <div class="mx-auto pt-2 md:pt-0 md:mx-0">
+                        <a href="#" class="text-xl text-white px-4 py-2 bg-sky-300 rounded-lg hover:bg-sky-300 hover:text-white md:bg-gray-200 md:text-black">View All Articles</a>
+                    </div>
+                </div>
+                <!--Articles-->
+                <div class="flex-col space-y-6 py-14">
+                    <div class="flex flex-wrap justify-between items-center mt-18 md:flex-row-reverse">
+                        <div class="md:w-1/3">
+                            <img src="https://source.unsplash.com/1mK-e9_fydg/200x140" class="w-full">
+                        </div>
+                        <div class="mb-4 md:w-1/2">
+                            <h3 class="text-white mb-4 text-xl font-semibold">
+                                Air travel rewards programs
+                            </h3>
+                            <p class="text-white mb-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint quod nulla obcaecati aspernatur doloremque pariatur, dolores molestias repudiandae quaerat, incidunt animi, quia quisquam culpa ipsa neque laudantium ea dicta. Sed dignissimos nisi perspiciatis, autem quod magni accusamus. Fugiat accusamus deserunt, amet id quisquam ex facere ea obcaecati delectus quaerat.
+                            </p>
+                            <a href="#" class="px-6 py-2 text-lg border-white border-solid border-2 rounded-full bg-white hover:bg-white hover:text-black md:text-white md:bg-transparent">Read more</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex flex-wrap justify-between items-center mt-18">
+                        <div class="md:w-1/3">
+                            <img src="https://source.unsplash.com/juQyeRT1WKc/200x150" class="w-full">
+                        </div>    
+                        <div class="mb-4 md:w-1/2">
+                                <h3 class="text-white mb-4 text-xl font-semibold">
+                                    For Foodies
+                                </h3>
+                                <p class="text-white mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint quod nulla obcaecati aspernatur doloremque pariatur, dolores molestias repudiandae quaerat, incidunt animi, quia quisquam culpa ipsa neque laudantium ea dicta. Sed dignissimos nisi perspiciatis, autem quod magni accusamus. Fugiat accusamus deserunt, amet id quisquam ex facere ea obcaecati delectus quaerat.
+                                </p>
+                                <a href="#" class="px-6 py-2 text-lg border-white border-solid border-2 rounded-full bg-white hover:bg-white hover:text-black md:text-white md:bg-transparent">Read more</a>
+                        </div>
+                            
+                    </div>  
+
+                    <div class="flex flex-wrap justify-between items-center mt-18 md:flex-row-reverse">
+                        <div class="md:w-1/3">
+                            <img src="https://source.unsplash.com/ODSndGL8SQ0/200x150" class="w-full">
+                        </div>
+                        <div class="mb-4 md:w-1/2">
+                            <h3 class="text-white mb-4 text-xl font-semibold">
+                                Honeymoon Ideas
+                            </h3>
+                            <p class="text-white mb-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint quod nulla obcaecati aspernatur doloremque pariatur, dolores molestias repudiandae quaerat, incidunt animi, quia quisquam culpa ipsa neque laudantium ea dicta. Sed dignissimos nisi perspiciatis, autem quod magni accusamus. Fugiat accusamus deserunt, amet id quisquam ex facere ea obcaecati delectus quaerat.
+                            </p>
+                            <a href="#" class="px-6 py-2 text-lg border-white border-solid border-2 rounded-full bg-white hover:bg-white hover:text-black md:text-white md:bg-transparent">Read more</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="travel-styles">
+        <div class="py-14 px-6">
+            <h3 class="text-2xl">
+                You do you
+            </h3>
+            <h2 class="font-bold text-4xl py-4 md:py-0">
+                Explore travel styles
+            </h2>
+            <div class="flex justify-evenly items-center flex-wrap py-4">
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Adventure Travel</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Art & Culture</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Beach Getaways</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Budget Travel</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Family Travel</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Food and Drink</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Honeymoons & Romantic Getaways</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Rail Journeys</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Roadtrips</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Sustainable Travel</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Wildlife & Nature</a>
+                <a href="#" class="bg-cyan-100 rounded-full my-4 py-2 px-4">Work & Travel</a>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 py-8 px-6">
+        <div class="flex flex-col-reverse space-y-8 justify-center items-center text-white mx-auto md:flex-row md:justify-around">
+            <div class="flex flex-col-reverse space-y-8 md:flex-col ">
+                <div class="flex items-center space-x-2">
+                    <p class="text-2xl">planet</p>
+                    <img src="images/globe-svgrepo-com.svg" alt="globe icon" width="50px">
+                    <p class="text-2xl">wanderer</p>
+                </div>
+                <div class="flex items-center space-x-4 py-4">
+                    <a href="#"><div class="social-icon-fb"></div></a>
+                    <a href="#"><div class="social-icon-yt"></div></a>
+                    <a href="#"><div class="social-icon-tw"></div></a>
+                    <a href="#"><div class="social-icon-in"></div></a>
+                </div>
+                <div class="my-6 md:hidden">
+                    <p>Copyright &copy; 2022, All Rights Reserved</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <a href="#">About Planet Wanderer</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Advertising</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Careers</a>
+
+                <div class="hidden my-6 md:block">
+                    <p>Copyright &copy; 2022, All Rights Reserved</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
